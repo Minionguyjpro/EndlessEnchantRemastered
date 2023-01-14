@@ -1,0 +1,71 @@
+name: EndlessEnchant
+version: 1.12.2
+author: Drkmaster83
+main: me.Drkmaster83.EndlessEnchant.EndlessEnchant
+commands:
+  EndlessEnchant:
+    description: The base command for EndlessEnchant.
+    aliases: [ee, enchant]
+permissions:
+  EndlessEnchant.*:
+    default: op
+    children:
+      EndlessEnchant.Help: true
+      EndlessEnchant.Usage: true
+      EndlessEnchant.Enchantments: true
+      EndlessEnchant.Enchant: true
+      EndlessEnchant.Enchant.*: true
+      EndlessEnchant.Endless: true
+      EndlessEnchant.Aliases: true
+      EndlessEnchant.Kits: true
+      EndlessEnchant.Kits.*: true
+  EndlessEnchant.Aliases:
+    default: op
+    children:
+      EndlessEnchant.Help: true
+  EndlessEnchant.Enchantments:
+    default: op
+    children:
+      EndlessEnchant.Help: true
+  EndlessEnchant.Enchant.*:
+    default: op
+    children:
+      EndlessEnchant.Enchant: true
+      EndlessEnchant.Disenchant: true
+      EndlessEnchant.Kits.*: true
+      EndlessEnchant.Usage: true
+      EndlessEnchant.Help: true
+  EndlessEnchant.Disenchant:
+    default: op
+    children:
+      EndlessEnchant.Aliases: true
+      EndlessEnchant.Enchantments: true
+      EndlessEnchant.Help: true
+      EndlessEnchant.Kits: true
+      EndlessEnchant.Usage: true
+  EndlessEnchant.Enchant:
+    default: op
+    children:
+      EndlessEnchant.Aliases: true
+      EndlessEnchant.Disenchant: true
+      EndlessEnchant.Enchantments: true
+      EndlessEnchant.Help: true
+      EndlessEnchant.Kits: true
+      EndlessEnchant.Usage: true
+  EndlessEnchant.Endless:
+    default: op
+  EndlessEnchant.Help:
+    default: op
+  EndlessEnchant.Kits:
+    default: op
+    children:
+      EndlessEnchant.Help: true
+      EndlessEnchant.Usage: true
+  EndlessEnchant.Kits.*:
+    default: op
+    children:
+      EndlessEnchant.Kits: true
+      EndlessEnchant.Kits.All: true
+      EndlessEnchant.Kits.List: true
+  EndlessEnchant.Usage:
+    default: op
