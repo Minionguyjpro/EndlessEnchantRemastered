@@ -17,7 +17,14 @@ Just drag and drop the .jar file into your Minecraft server's \plugins directory
 EndlessEnchant has one base command: /EE. By using this one command, you have access to all of the plugin's features!
 ![42e909e49acacb0afa796ac9f760848eacdadb0e](https://user-images.githubusercontent.com/66115754/215254568-3a7e6441-a078-4183-9fef-dfa592c1cd57.png)
 
-<p align="center">
-Still Confused? I gotcha covered! Here's Drkmaster83's (creator of reloaded version) review of it.
-</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cZLniyi59aY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p align="center">Still Confused? I gotcha covered! Here's Drkmaster83's (creator of reloaded version) review of it.</p>
+<div align="center">
+      <a href="https://www.youtube.com/watch?v=cZLniyi59aY">
+     <img 
+      src="https://user-images.githubusercontent.com/66115754/215255671-ae5e989e-a8d4-4610-905d-0150575ae3a5.png" 
+      alt="Everything Is AWESOME" 
+      style="width:50%;">
+      </a>
+    </div>
+    
+# Any questions or bugs? I'd be happy to squash 'em for newer releases!
