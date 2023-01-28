@@ -7,9 +7,6 @@
     <groupId>org.example</groupId>
     <artifactId>EndlessEnchant</artifactId>
     <version>1.19.3</version>
-      <exclusion>
-        <version>1.19.3</version>
-      </exclusion>          
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
