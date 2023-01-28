@@ -25,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ProtocolLib
-          path: target/EndlessEnchant.jar
+          path: target/EndlessEnchant-${project.version}.jar
