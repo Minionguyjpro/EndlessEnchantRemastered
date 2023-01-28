@@ -1,5 +1,6 @@
 name: EndlessEnchant
-version: 1.12.2
+api-version: 1.19
+version: 1.19.3
 author: Drkmaster83
 main: me.Drkmaster83.EndlessEnchant.EndlessEnchant
 commands:
