@@ -368,10 +368,10 @@ public class EndlessEnchant extends JavaPlugin implements Listener {
          this.removeGlow(item);
       }
 
-      if (item.getType() != Material.BOOK && item.getType() != Material.ENCHANTED_BOOK && item.getType() != Material.BOOK_AND_QUILL) {
+      if (item.getType() != Material.BOOK && item.getType() != Material.ENCHANTED_BOOK && item.getType() != Material.WRITABLE_BOOK) {
          item.addUnsafeEnchantment(enchantment, level);
       } else {
-         if (item.getType() == Material.BOOK || item.getType() == Material.BOOK_AND_QUILL) {
+         if (item.getType() == Material.BOOK || item.getType() == Material.WRITABLE_BOOK) {
             item.setType(Material.ENCHANTED_BOOK);
          }
 
