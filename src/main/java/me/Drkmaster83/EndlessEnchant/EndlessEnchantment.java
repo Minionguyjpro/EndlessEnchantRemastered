@@ -19,6 +19,10 @@ public enum EndlessEnchantment {
    FIRE_ASPECT("WEAPON", "c", 20),
    LOOT_BONUS_MOBS("WEAPON", "c", 21),
    SWEEPING_EDGE("WEAPON", "c", 22),
+   LOYALTY("WEAPON", "c", 65);
+   IMPALING("WEAPON", "c", 66);
+   RIPTIDE("WEAPON", "c", 67);
+   CHANNELING("WEAPON", "c", 68);
    DIG_SPEED("TOOL", "d", 32),
    SILK_TOUCH("TOOL", "d", 33),
    LOOT_BONUS_BLOCKS("TOOL", "d", 35),
