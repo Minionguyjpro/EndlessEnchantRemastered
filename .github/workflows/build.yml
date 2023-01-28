@@ -21,8 +21,12 @@ jobs:
       - name: Run maven build lifecycle
         run: mvn --batch-mode clean test package
 
+      - name: Extract Maven project version
+        run: echo ::set-output name=version::$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)
+        id: project
+        
       - name: Upload plugin file
         uses: actions/upload-artifact@v2
         with:
           name: ProtocolLib
-          path: target/EndlessEnchant-${project.version}.jar
+          path: target/EndlessEnchant-${{ steps.project.outputs.version }}.jar
