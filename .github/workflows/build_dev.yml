@@ -1,0 +1,37 @@
+name: Build EndlessEnchantRemastered dev
+
+on:
+  push:
+      branches: 
+        - 'dev'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Run maven build lifecycle
+        run: mvn -e --batch-mode clean test package
+
+      - name: Extract Maven project version
+        run: echo "version=$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)" >> $GITHUB_OUTPUT
+        id: project
+
+      - name: Tell current version
+        run: echo The current version is ${{ steps.project.outputs.version }}
+        
+      - name: Upload plugin file
+        uses: actions/upload-artifact@v2
+        with:
+          name: EndlessEnchant
+          path: target/EndlessEnchant.jar
