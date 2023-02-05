@@ -31,7 +31,7 @@ jobs:
         run: echo The current version is ${{ steps.project.outputs.version }}
         
       - name: Rename JAR file
-        run: mv "$GITHUB_WORKSPACE\target\EndlessEnchant.jar" "EndlessEnchant-dev.jar"
+        run: mv "$GITHUB_WORKSPACE/target/EndlessEnchant.jar" "EndlessEnchant-dev.jar"
         
       - name: Upload plugin file
         uses: actions/upload-artifact@v2
