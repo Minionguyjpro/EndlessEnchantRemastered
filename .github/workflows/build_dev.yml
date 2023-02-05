@@ -1,9 +1,9 @@
-name: Build EndlessEnchantRemastered
+name: Build EndlessEnchantRemastered dev
 
 on:
   push:
       branches: 
-        - 'main'
+        - 'dev'
   pull_request:
 
 jobs:
@@ -33,5 +33,5 @@ jobs:
       - name: Upload plugin file
         uses: actions/upload-artifact@v2
         with:
-          name: EndlessEnchant-dev
-          path: target/EndlessEnchant-dev.jar
+          name: EndlessEnchant
+          path: target/EndlessEnchant.jar
