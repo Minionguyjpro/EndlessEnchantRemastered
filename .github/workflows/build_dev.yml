@@ -30,8 +30,11 @@ jobs:
       - name: Tell current version
         run: echo The current version is ${{ steps.project.outputs.version }}
         
+      - name: Rename JAR file
+        run: mv "$GITHUB_WORKSPACE/target/EndlessEnchant.jar" "$GITHUB_WORKSPACE/target/EndlessEnchant-dev.jar"
+        
       - name: Upload plugin file
         uses: actions/upload-artifact@v2
         with:
           name: EndlessEnchant
-          path: target/EndlessEnchant.jar
+          path: target/EndlessEnchant-dev.jar
