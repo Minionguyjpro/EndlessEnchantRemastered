@@ -3,12 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+         
+    <description>[Renew] A plugin specializing in commands that put high level enchants and special effects on items!</description>
+    <url>https://github.com/Minionguyjpro/EndlessEnchantRemastered</url>
+    <packaging>jar</packaging>
+    <inceptionYear>2023</inceptionYear>
 
-    <groupId>org.example</groupId>
+    <groupId>me.Drkmaster83.EndlessEnchant</groupId>
     <artifactId>EndlessEnchant</artifactId>
     <version>1.19.3</version>
 
     <properties>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.build.number></project.build.number>
+	<project.fullVersion>${project.version}</project.fullVersion>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
