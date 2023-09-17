@@ -31,7 +31,7 @@ jobs:
         run: echo The current version is ${{ steps.project.outputs.version }}
         
       - name: Upload plugin file
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: EndlessEnchant
           path: target/EndlessEnchant.jar
